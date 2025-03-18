@@ -53,6 +53,8 @@ For per frame visualization, you can run:
 
 We acknowledge all the open-source contributors for the following projects to make this work possible:
 
+- [SQD-MapNet](https://github.com/shuowang666/SQD-MapNet)
+- [StreamMapNet](https://github.com/yuantianyuan01/StreamMapNet)
 - [Openlane-V2](https://github.com/OpenDriveLab/OpenLane-V2)
 - [BEVFormer](https://github.com/fundamentalvision/BEVFormer)
 - [LaneSegNet](https://github.com/OpenDriveLab/LaneSegNet)
