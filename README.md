@@ -14,6 +14,40 @@
 - MMSegmentation: 0.30.0
 - MMDetection3D: 1.0.0rc6+
 - spconv2.0: False
+
+## Prepare Dataset
+Following [OpenLane-V2 repo](https://github.com/OpenDriveLab/OpenLane-V2/blob/v2.1.0/data) to download the **Image** and the **Map Element Bucket** data. Run the following script to collect data for this repo. 
+
+> [!IMPORTANT]
+> 
+> :exclamation: Please note that the script for generating LaneSegNet data is not the same as the OpenLane-V2 Map Element Bucket. The `*_lanesegnet.pkl` is not the same as the `*_ls.pkl`.
+> 
+> :bell: The `Map Element Bucket` has been updated as of October 2023. Please ensure you download the most recent data.
+
+```bash
+cd TopoStreamer
+mkdir data
+
+ln -s {Path to OpenLane-V2 repo}/data/OpenLane-V2 ./data/
+python ./tools/data_process.py
+python ./tools/tracking/dist_track.sh
+```
+
+After setup, the hierarchy of folder `data` is described below:
+```
+data/OpenLane-V2
+├── train
+|   └── ...
+├── val
+|   └── ...
+├── test
+|   └── ...
+├── data_dict_subset_A_train_lanesegnet.pkl
+├── data_dict_subset_A_val_lanesegnet.pkl
+├── data_dict_subset_A_train_lanesegnet_gt_tracks.pkl
+├── data_dict_subset_A_val_lanesegnet_gt_tracks.pkl
+├── ...
+```
 ## Installation
 It is recommended to download the [environment](https://pan.baidu.com/s/1TLdPFQ-rQlzc8l9LlknNQQ?pwd=9ibi) directly.
 
