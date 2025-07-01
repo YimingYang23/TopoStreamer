@@ -21,6 +21,18 @@
 
 ## DEMO
 
+<div align="center">
+
+  
+![vis1](/vis1.gif)
+
+
+![vis2](/vis2.gif)
+
+
+
+![vis5](/vis5.gif)
+</div>
 
 
 ## Prerequisites
