@@ -18,12 +18,6 @@
 ## Prepare Dataset
 Following [OpenLane-V2 repo](https://github.com/OpenDriveLab/OpenLane-V2/blob/v2.1.0/data) to download the **Image** and the **Map Element Bucket** data. Run the following script to collect data for this repo. 
 
-> [!IMPORTANT]
-> 
-> :exclamation: Please note that the script for generating LaneSegNet data is not the same as the OpenLane-V2 Map Element Bucket. The `*_lanesegnet.pkl` is not the same as the `*_ls.pkl`.
-> 
-> :bell: The `Map Element Bucket` has been updated as of October 2023. Please ensure you download the most recent data.
-
 ```bash
 cd TopoStreamer
 mkdir data
@@ -49,22 +43,30 @@ data/OpenLane-V2
 ├── ...
 ```
 ## Installation
-It is recommended to download the [environment](https://pan.baidu.com/s/1TLdPFQ-rQlzc8l9LlknNQQ?pwd=9ibi) directly.
 
+We recommend using [conda](https://docs.conda.io/en/latest/miniconda.html) to run the code.
+```bash
+conda create -n topostreamer python=3.8 -y
+conda activate topostreamer
 
-cd {Your anaconda path}/envs
+# (optional) If you have CUDA installed on your computer, skip this step.
+conda install cudatoolkit=11.1.1 -c conda-forge
 
+pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+```
 
-mkdir lanesegnet2roadnet
+Install mm-series packages.
+```bash
+pip install mmcv-full==1.5.2 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
+pip install mmdet==2.26.0
+pip install mmsegmentation==0.29.1
+pip install mmdet3d==1.0.0rc6
+```
 
-
-cd lanesegnet2roadnet
-
-
-Download the [environment](https://pan.baidu.com/s/1TLdPFQ-rQlzc8l9LlknNQQ?pwd=9ibi) and unpack the file in current path.
-
-
-conda activate lanesegnet2roadnet
+Install other required packages.
+```bash
+pip install -r requirements.txt
+```
 
 ## Train
 
@@ -92,4 +94,4 @@ We acknowledge all the open-source contributors for the following projects to ma
 - [Openlane-V2](https://github.com/OpenDriveLab/OpenLane-V2)
 - [BEVFormer](https://github.com/fundamentalvision/BEVFormer)
 - [LaneSegNet](https://github.com/OpenDriveLab/LaneSegNet)
-- [Roadnet](https://github.com/fudan-zvg/RoadNet)
+- [MapTracker](https://github.com/woodfrog/maptracker)
