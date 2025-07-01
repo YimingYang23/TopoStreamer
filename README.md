@@ -9,6 +9,8 @@
 
 </div>
 
+This repository is built upon [LaneSegNet](https://github.com/OpenDriveLab/LaneSegNet).
+
 ## Motivation
 
 <div align="center">
