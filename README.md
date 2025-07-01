@@ -1,6 +1,10 @@
 <div align="center">
   
-# TopoStreamer: Temporal Lane Segment Topology Reasoning in Autonomous Driving
+<h2 align="center"> TopoStreamer: Temporal Lane Segment Topology Reasoning in Autonomous Driving </h1>
+
+[Yiming Yang*<sup>1</sup>] , [Yueru Luo*<sup>1</sup>] , [Bingkun He*<sup>1</sup>]
+
+<sup>1</sup> Simon Fraser University <sup>2</sup> Wayve
 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2312.16108-479ee2.svg)](xxxxx)
