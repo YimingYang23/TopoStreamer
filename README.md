@@ -5,10 +5,18 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2312.16108-479ee2.svg)](xxxxx)
 
-![Motivation](/motivation1.gif)
+
 
 </div>
 
+## Motivation
+
+<div align="center">
+
+  
+![Motivation](/motivation1.gif)
+
+</div>
 
 ## Prerequisites
 - 4 x 32G memory V100 GPU (for batch size = 2)
