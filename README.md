@@ -43,20 +43,8 @@ This repository is built upon [LaneSegNet](https://github.com/OpenDriveLab/LaneS
 
 
 ## Prerequisites
-- 4 x 32G memory V100 GPU (for batch size = 2)
-- Linux
-- Python 3.8.18
-- NVIDIA GPU + CUDA 11.1
-- PyTorch 1.9.1
-- TorchVision: 0.10.1+cu111
-- OpenCV: 4.8.0
-- MMCV: 1.5.2
-- MMCV Compiler: GCC 7.3
-- MMCV CUDA Compiler: 11.1
-- MMDetection: 2.26.0
-- MMSegmentation: 0.30.0
-- MMDetection3D: 1.0.0rc6+
-- spconv2.0: False
+- 4 x 40G memory A100 GPUs or 4 x 32G memory V100 GPUs (for batch size = 2)
+
 
 ## Prepare Dataset
 Following [OpenLane-V2 repo](https://github.com/OpenDriveLab/OpenLane-V2/blob/v2.1.0/data) to download the **Image** and the **Map Element Bucket** data. Run the following script to collect data for this repo. 
