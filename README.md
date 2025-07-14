@@ -2,8 +2,8 @@
   
 <h2 align="center"> TopoStreamer: Temporal Lane Segment Topology Reasoning in Autonomous Driving </h1>
 
-Yiming Yang<sup>1,2</sup> , Yueru Luo<sup>1,2</sup>, Bingkun He<sup>3</sup>, Hongbin Lin<sup>1,2</sup>, Suzhong Fu<sup>1,2</sup>, Chao Yan<sup>4</sup>, Kun Tang<sup>4</sup>, Xinrui Yan<sup>4</sup>, 
-Chao Zheng<sup>4</sup>, Shuguang Cui<sup>2,1</sup>, Zhen Li<sup>2,1</sup>
+Yiming Yang<sup>1,2</sup> , Yueru Luo<sup>1,2</sup>, Bingkun He<sup>3</sup>, Hongbin Lin<sup>1,2</sup>, Suzhong Fu<sup>1,2</sup>, Chao Zheng<sup>4</sup>, Zhipeng Cao<sup>4</sup>, Erlong Li<sup>4</sup>, Chao Yan<sup>4</sup>, 
+Shuguang Cui<sup>2,1</sup>, Zhen Li<sup>2,1</sup>
 
 <sup>1</sup> FNii-Shenzhen  <sup>2</sup> SSE, CUHK-Shenzhen <sup>3</sup> SCSE, Wuhan University, <sup>4</sup> T Lab, Tencent
 
