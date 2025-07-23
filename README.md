@@ -26,7 +26,7 @@ This repository is built upon [LaneSegNet](https://github.com/OpenDriveLab/LaneS
 </div>
 
 
-## DEMO
+## Visualizations
 
 <div align="center">
 
